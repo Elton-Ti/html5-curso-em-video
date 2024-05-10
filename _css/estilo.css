@@ -100,10 +100,11 @@ nav#menu ul {
 
 nav#menu li{
     display: inline-block;
-    background-color: #dddddd;
+    background-color: #64a9e2;
     padding: 10px;
     margin: 2px;
-    transition: background-color 1s;
+    transition: background-color 1s;    
+    border-radius: 10%;
 }
 
 nav#menu li:hover{
