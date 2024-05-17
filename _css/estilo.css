@@ -1,13 +1,12 @@
 @charset "UTF-8";
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
-</style>
 @font-face {
     font-family: 'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #dddddd;
     color:rgb(0, 0, 0);
 }
@@ -25,6 +24,15 @@ p{
     text-indent: 50px;
 }
 
+a {
+   color: #606060;
+   text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header#cabecalho img#icone {
     position: absolute;
     left: 780px;
@@ -38,7 +46,7 @@ header#cabecalho {
 }
 
 header#cabecalho h1 {
-    font-family: FonteLogo, sans-serif;
+    font-family: 'FonteLogo', sans-serif;
     font-size: 30px;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -100,7 +108,7 @@ nav#menu ul {
 
 nav#menu li{
     display: inline-block;
-    background-color: #64a9e2;
+    background-color: #79b4e4;
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;    
@@ -123,7 +131,6 @@ nav#menu a{
 
 nav#menu a:hover{
     color: #ffffff;
-    text-decoration: underline;
 }
 
 section#corpo {
@@ -132,6 +139,38 @@ section#corpo {
     float: left;
     border-right: 1px solid #606060;
     padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 12pt;
+    color: #606060 ;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'Fontelogo';
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size:  12px;
+    color: #606060;
+}
+
+.direita {
+    text-align: right;
 }
 
 table#tabelaspec{
@@ -144,9 +183,36 @@ table#tabelaspec{
 table#tabelaspec td{
     border: 1px solid #606060;
     padding: 10px;
-    text-align: top;
+    text-align: center;
+    vertical-align: middle;
 }
 
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+    text-align: left;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
 
 
 aside#lateral{
